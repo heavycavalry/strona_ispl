@@ -1,0 +1,16 @@
+<svg width="375" height="325" xmlns="http://www.w3.org/2000/svg">
+ <g id="Layer_1">
+  <title>Layer 1</title>
+  <path id="svg_3" d="m106.7,323.9c-66.76796,2 -92,-32.90331 -102,-150.5c-10,-117.59669 13.23204,-191.5 186,-153.5c172.76796,38 185,87.90331 184,136.5c-1,48.59669 -201.23204,165.5 -268,167.5z" opacity="undefined" stroke="url(#svg_2)" fill="url(#svg_1)"/>
+ </g>
+ <defs>
+  <linearGradient y2="0.62187" x2="0.66016" y1="0.075" x1="0.08203" id="svg_1">
+   <stop offset="0" stop-opacity="0.99609" stop-color="#14c2a3"/>
+   <stop offset="1" stop-opacity="0.99609" stop-color="#15bc76"/>
+  </linearGradient>
+  <linearGradient y2="0" x2="1" y1="0" x1="0" id="svg_2">
+   <stop offset="0.00391" stop-opacity="0.99219" stop-color="#14c2a3"/>
+   <stop offset="1" stop-opacity="0.99609" stop-color="#15bc76"/>
+  </linearGradient>
+ </defs>
+</svg>
