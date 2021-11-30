@@ -1,8 +1,5 @@
 Design - sill in editing => https://www.figma.com/file/6kRYJOPpxxYJCofFtoeeOm/Indywidaualna-praktyka?node-id=0%3A1
 
-![Przechwytywanie](https://user-images.githubusercontent.com/47197438/144080620-bfa9195b-4872-4fb0-8f3d-6bc55da2a9d2.PNG)
-
-
 ## Available Scripts
 
 In the project directory, you can run:
