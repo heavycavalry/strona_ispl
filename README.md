@@ -1,4 +1,7 @@
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F6kRYJOPpxxYJCofFtoeeOm%2FIndywidaualna-praktyka%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+Design - sill in editing
+
+![Przechwytywanie](https://user-images.githubusercontent.com/47197438/144080620-bfa9195b-4872-4fb0-8f3d-6bc55da2a9d2.PNG)
+
 
 ## Available Scripts
 
