@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Theme from "./Theme";
-const Container = styled.div`
+export const Container = styled.div`
   max-width: 250px;
   margin: 0 auto;
   @media ${Theme.Breakpoints.smallDevices} {

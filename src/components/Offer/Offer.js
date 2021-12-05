@@ -1,6 +1,7 @@
-import Heading from "../common/SectionHeading";
+import Heading from "../common/SectionHeader";
 import Section from "../../styledHelpers/Section";
 import Overlay from "./Overlay";
+import Theme from "../../styledHelpers/Theme";
 import {
   faAmbulance,
   faCar,
@@ -8,32 +9,60 @@ import {
   faHardHat,
   faTimesCircle,
 } from "@fortawesome/free-solid-svg-icons";
-import OfferTile from "./OfferTile";
+import { DesktopTile, MobileTile } from "./OfferTile";
 import Container from "../../styledHelpers/Container";
-import { OfferTilesDiv } from "./OfferStyles";
+import { MobileTilesDiv } from "./OfferStyles";
+import { useMediaPredicate } from "react-media-hook";
 
 function Offer() {
   return (
     <Section id="offer">
       <Container>
         <Heading name="OFERTA BADAŃ" title="Badania psychologiczne" />
-        <OfferTilesDiv>
-          <OfferTile icon={faCar} text="Na nowe kategorie" />
-          <OfferTile
-            icon={faChalkboardTeacher}
-            text="Instruktorów i egzaminatorów"
-          />
-          <OfferTile
-            icon={faAmbulance}
-            text="Do kierowania poj.uprzywilejowanymi"
-          />
-          <OfferTile icon={faTimesCircle} text="Po odebraniu prawa jazdy" />
-          <OfferTile icon={faHardHat} text="W zakresie medycyny pracy" />
-        </OfferTilesDiv>
+        <MediaOffer />
       </Container>
       <Overlay />
     </Section>
   );
 }
+
+const MediaOffer = () => {
+  return (
+    <>
+      {useMediaPredicate(`${Theme.Breakpoints.maxTablet}`) && (
+        <MobileTilesDiv>
+          <MobileTile icon={faCar} text="Na nowe kategorie" />
+          <MobileTile
+            icon={faChalkboardTeacher}
+            text="Instruktorów i egzaminatorów"
+          />
+          <MobileTile
+            icon={faAmbulance}
+            text="Do kierowania poj.uprzywilejowanymi"
+          />
+          <MobileTile icon={faTimesCircle} text="Po odebraniu prawa jazdy" />
+          <MobileTile icon={faHardHat} text="W zakresie medycyny pracy" />
+        </MobileTilesDiv>
+      )}
+      {useMediaPredicate(`${Theme.Breakpoints.tablet}`) && (
+        <>
+          <div>
+            <DesktopTile icon={faCar} text="Na nowe kategorie" />
+            <DesktopTile
+              icon={faChalkboardTeacher}
+              text="Instruktorów i egzaminatorów"
+            />
+            <DesktopTile
+              icon={faAmbulance}
+              text="Do kierowania poj.uprzywilejowanymi"
+            />
+            <DesktopTile icon={faTimesCircle} text="Po odebraniu prawa jazdy" />
+            <DesktopTile icon={faHardHat} text="W zakresie medycyny pracy" />
+          </div>
+        </>
+      )}
+    </>
+  );
+};
 
 export default Offer;

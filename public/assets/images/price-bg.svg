@@ -1,0 +1,18 @@
+<svg width="375" height="800" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;" stroke="null">
+ <g stroke="null" id="Layer_1">
+  <title stroke="null">Layer 1</title>
+  <path id="svg_2" d="m0.7,163.60004l376.00003,-75l-1,719.99994l-376.00003,0l0.5,-322.49997l0.25,-161.24998l0.125,-80.625l0.0625,-40.3125l0.03125,-20.15625l-7.98438,-2.07812l8.00781,-13.03906l0.00391,-2.51953l0.00196,-1.25977l0.00098,-0.62988l0.00048,-0.31494l0.00024,-0.15747l0.00013,-0.07873l0.00006,-0.03937l0.00003,-0.01968l0.00001,-0.00984l0.00001,-0.00493l0,-0.00246l0,-0.00123l0,-0.00061c0,-0.00011 0,-0.00021 0,-0.00031c0,-0.00005 0.00001,-0.0001 0.00001,-0.00016c0,-0.00002 0,-0.00005 0,-0.00007c0,-0.00002 0,-0.00003 0,-0.00004c0,0 0,-0.00001 0,-0.00002c0,-0.00001 0,-0.00001 0,-0.00002z" opacity="undefined" stroke-width="0" stroke="#000" fill="url(#svg_1)"/>
+  <ellipse ry="130.5" rx="130.5" id="svg_3" cy="328.5" cx="205.8" stroke-width="0" stroke="#000" fill="url(#svg_1)"/>
+  <ellipse ry="123.5" rx="121" id="svg_4" cy="447.5" cx="162.3" stroke-width="0" stroke="#000" fill="url(#svg_1)"/>
+  <ellipse ry="85" rx="88.5" id="svg_6" cy="210" cx="89.8" stroke-width="0" stroke="#000" fill="url(#svg_1)"/>
+ </g>
+ <defs style="vector-effect: non-scaling-stroke;" stroke="null">
+  <linearGradient style="vector-effect: non-scaling-stroke;" stroke="null" y="157.6" x="-0.3" height="56" width="0" y2="0" x2="0.35938" y1="0.99687" x1="0.48828" id="svg_1">
+   <stop style="vector-effect: non-scaling-stroke;" stroke="null" offset="0" stop-opacity="0.99609" stop-color="#14c2a3"/>
+   <stop style="vector-effect: non-scaling-stroke;" stroke="null" offset="1" stop-opacity="0.99609" stop-color="#15bc76"/>
+   <stop style="vector-effect: non-scaling-stroke;" stroke="null" offset="1" stop-opacity="0.99609" stop-color="#15bc76"/>
+   <stop style="vector-effect: non-scaling-stroke;" stroke="null" offset="NaN" stop-opacity="0" stop-color="0"/>
+   <stop style="vector-effect: non-scaling-stroke;" stroke="null" offset="NaN" stop-opacity="0" stop-color="0"/>
+  </linearGradient>
+ </defs>
+</svg>

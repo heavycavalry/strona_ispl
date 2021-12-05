@@ -3,7 +3,7 @@ import Theme from "../../styledHelpers/Theme";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-scroll";
 //HEADER
-export const HeaderContainer = styled.div`
+export const TopbarContainer = styled.div`
   position: fixed;
   width: 100%;
   z-index: 9;
@@ -18,12 +18,15 @@ export const HeaderContainer = styled.div`
 export const ContactLineDiv = styled.div`
   background: ${Theme.Colors.colorGradient};
   color: white;
-  font-size: ${Theme.FontSizes.mobileContactLine};
-  align-items: center;
+  font-size: 10px;
 `;
 
 export const ContactLineIcon = styled(FontAwesomeIcon)`
-  padding-right: 10px;
+  margin-right: 10px;
+`;
+
+export const Nav = styled.nav`
+  background-color: white;
 `;
 
 //NAVIGATION
@@ -38,9 +41,6 @@ export const HamburgerIcon = styled(FontAwesomeIcon)`
   }
 `;
 
-export const Nav = styled.nav`
-  background: white;
-`;
 export const SidebarMenu = styled.aside`
   display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
   flex-direction: column;
@@ -48,6 +48,7 @@ export const SidebarMenu = styled.aside`
   align-items: center;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   opacity: 0.9;
@@ -55,14 +56,10 @@ export const SidebarMenu = styled.aside`
   color: white;
 `;
 
-// export const NavMenu = styled.ul`
-//
-//   @media ${Theme.Breakpoints.laptop} {
-//     display: flex;
-//   }
-//   & > li {
-//     padding-left: 40px;
-//   }
-// `;
+export const Logo = styled.h2`
+  margin: 0;
+  font-style: ${Theme.FontStyles.Jomhuria};
+  line-height: 2.5;
+`;
 
 export const SidebarLink = styled(Link)``;

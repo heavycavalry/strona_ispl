@@ -1,4 +1,4 @@
-import Heading from "../common/SectionHeading";
+import Heading from "../common/SectionHeader";
 import Container from "../../styledHelpers/Container";
 import Section from "../../styledHelpers/Section";
 import {
@@ -10,21 +10,24 @@ import {
   LabelIcon,
   Svg,
   ShapeDiv,
+  ContentDiv,
 } from "./AboutStyles";
+import { MainText } from "../../styledHelpers/Headers";
 
 function AboutSection() {
   return (
     <Section id="about">
       <Container>
-        <Heading name="O NAS" title="Pracownia psychologiczna" />
-        <TextDiv>
-          <p>
-            Nasza pracownia powstała w 2006 roku. Posiada zaświadczenie o wpisie
-            do rejestru przedsiębiorców prowadzących Pracownię Psychologiczną nr
-            28/2006 wydane przez Marszałka Województwa Małopolskiego. Obecnie
-            siedziba pracowni znajduję się w Krakowie przy ul. Niskiej 2.
-          </p>
-        </TextDiv>
+        <Heading
+          name="O NAS"
+          title="Pracownia psychologiczna przy ul. Niskiej"
+        />
+        <MainText>
+          Nasza pracownia powstała w 2006 roku. Posiada zaświadczenie o wpisie
+          do rejestru przedsiębiorców prowadzących Pracownię Psychologiczną nr
+          28/2006 wydane przez Marszałka Województwa Małopolskiego. Obecnie
+          siedziba pracowni znajduję się w Krakowie przy ul. Niskiej 2.
+        </MainText>
         <ShapeDiv>
           <Svg
             src={`${process.env.PUBLIC_URL}/assets/images/green-shape.svg`}
@@ -55,7 +58,7 @@ function Label(props) {
       </div>
       <div>
         <LabelNumber>{props.number}</LabelNumber>
-        <LabelText>{props.text}</LabelText>
+        <MainText>{props.text}</MainText>
       </div>
     </LabelDiv>
   );

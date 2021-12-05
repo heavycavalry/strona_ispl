@@ -19,7 +19,6 @@ function OverlayText() {
       <H3Styled>badania okresowe</H3Styled>
       <H3Styled>badania kontrolne</H3Styled>
       <H3Styled>badania sanitarno-epidemiologiczne</H3Styled>
-      <H3Styled>badania dla kierowców i operatorów maszyn</H3Styled>
     </OverlayTextDiv>
   );
 }

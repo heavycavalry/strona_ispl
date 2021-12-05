@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
 import Container from "../../styledHelpers/Container";
-import { H1Styled } from "../../styledHelpers/Headers";
+import { H1Styled, MainText } from "../../styledHelpers/Headers";
 import { Button, HomeOverlayDiv, HomeSection, Article } from "./HomeStyles";
 
 function Home() {
@@ -10,11 +10,11 @@ function Home() {
         <Container>
           <Article>
             <H1Styled>Badania psychologiczne kierowców</H1Styled>
-            <p>
+            <MainText>
               Wykonujemy również badania lekarskie oraz konsultacje
               specjalistyczne (OKULISTA, LARYNGOLOG, NEUROLOG i lekarz MEDYCYNY
               PRACY)
-            </p>
+            </MainText>
           </Article>
           <Button>
             <Link

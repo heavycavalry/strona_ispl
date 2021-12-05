@@ -1,14 +1,26 @@
-import { OfferIcon, OfferTileDiv } from "./OfferStyles";
+import { MainText } from "../../styledHelpers/Headers";
+import { OfferIcon, DesktopTileDiv, MobileTileDiv } from "./OfferStyles";
 
-function OfferTile(props) {
+export function MobileTile(props) {
   return (
-    <OfferTileDiv>
+    <MobileTileDiv>
       <div>
         <OfferIcon icon={props.icon} />
       </div>
-      <p>{props.text}</p>
-    </OfferTileDiv>
+      <MainText>{props.text}</MainText>
+    </MobileTileDiv>
   );
 }
 
-export default OfferTile;
+export function DesktopTile(props) {
+  return (
+    <DesktopTileDiv>
+      <div>
+        <OfferIcon icon={props.icon} />
+      </div>
+      <MainText>{props.text}</MainText>
+    </DesktopTileDiv>
+  );
+}
+
+export default { DesktopTile, MobileTile };

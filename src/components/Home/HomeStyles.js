@@ -33,8 +33,9 @@ export const Article = styled.article`
 
 export const Button = styled.button`
   position: absolute;
-  padding: 10px 20px;
+  padding: 15px 20px;
   background: ${Theme.Colors.green};
   border-radius: 10px;
   color: white;
+  font-size: 20px;
 `;

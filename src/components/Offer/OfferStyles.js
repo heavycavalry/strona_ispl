@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import Theme from "../../styledHelpers/Theme";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import FlexDiv from "../../styledHelpers/FlexDiv";
+import WhiteRoundDiv from "../../styledHelpers/WhiteRoundDiv";
 
 export const OverlayImageDiv = styled.div`
   background: url(${`${process.env.PUBLIC_URL}/assets/images/overlay-img-mobile.jpg`})
     no-repeat center center fixed;
   background-size: cover;
   max-width: 100vw;
-  height: 50vh;
+  height: 40vh;
   position: relative;
   left: 50%;
   right: 50%;
@@ -33,29 +33,36 @@ export const OverlayDiv = styled.div`
 
 export const OfferIcon = styled(FontAwesomeIcon)`
   color: ${Theme.Colors.green};
-  font-size: 25px;
-  padding: 15px 20px;
+  font-size: 30px;
 `;
 
-export const OfferTilesDiv = styled.div`
-  margin-bottom: 30px;
-`;
-
-export const OfferTileDiv = styled(FlexDiv)`
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-  background-color: white;
+export const MobileTilesDiv = styled.div`
   margin-bottom: 20px;
+`;
+
+export const MobileTileDiv = styled(WhiteRoundDiv)`
+  justify-content: flex-start;
+  font-size: 13px;
+  position: relative;
+  border-bottom: 3px solid ${Theme.Colors.green};
+  transition: all 0.5s;
+  &:hover {
+    background-color: ${Theme.Colors.green};
+    color: white;
+    > div > svg {
+      color: white;
+    }
+  }
   > div {
-    width: 20%;
+    width: 25%;
     text-align: center;
   }
 `;
 
+export const DesktopTileDiv = styled(WhiteRoundDiv)``;
+
 export const OverlayTextDiv = styled.div`
   color: white;
-  font-size: 18px;
-  padding: 10px;
   z-index: 2;
   position: absolute;
 `;
