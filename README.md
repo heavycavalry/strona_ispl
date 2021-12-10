@@ -1,4 +1,4 @@
-Design - sill in editing => https://www.figma.com/file/6kRYJOPpxxYJCofFtoeeOm/Indywidaualna-praktyka?node-id=0%3A1
+Design  => https://www.figma.com/file/6kRYJOPpxxYJCofFtoeeOm/Indywidaualna-praktyka?node-id=0%3A1
 
 ## Available Scripts
 
