@@ -10,8 +10,8 @@ function Home() {
       {useMediaPredicate(`${Theme.Breakpoints.maxTablet}`) && (
         <HomeOverlayDiv>
           <Container>
+            <H1Styled>Badania psychologiczne Kraków</H1Styled>
             <Article>
-              <H1Styled>Badania psychologiczne Kraków</H1Styled>
               <MainText>
                 Wykonujemy również badania lekarskie oraz konsultacje
                 specjalistyczne (OKULISTA, LARYNGOLOG, NEUROLOG i lekarz

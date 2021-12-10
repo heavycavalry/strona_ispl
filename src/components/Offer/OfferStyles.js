@@ -8,7 +8,7 @@ export const OverlayImageDiv = styled.div`
     no-repeat center center fixed;
   background-size: cover;
   max-width: 100vw;
-  height: 40vh;
+  height: 300px;
   position: relative;
   left: 50%;
   right: 50%;
@@ -26,7 +26,6 @@ export const OverlayImageDiv = styled.div`
 
 export const OverlayDiv = styled.div`
   width: 100%;
-  height: 100%;
   background-color: black;
   opacity: 0.5;
 `;
@@ -60,7 +59,13 @@ export const MobileTileDiv = styled(WhiteRoundDiv)`
 `;
 
 export const DesktopTileDiv = styled(WhiteRoundDiv)`
-  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 350px;
+  height: 180px;
+  border-bottom: 5px solid ${Theme.Colors.green};
 `;
 
 export const OverlayTextDiv = styled.div`

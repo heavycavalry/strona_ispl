@@ -4,6 +4,7 @@ import Theme from "./Theme";
 export const H1Styled = styled.h1`
   font-size: 1.8rem;
   margin: 0;
+  line-height: 1.5;
   @media ${Theme.Breakpoints.smallDevices} {
     font-size: 2rem;
   }
@@ -36,7 +37,7 @@ export const H2Styled = styled.h2`
     font-size: 2.7rem;
   }
   @media ${Theme.Breakpoints.desktop} {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 `;
 
@@ -54,6 +55,7 @@ export const GreenHeading = styled.p`
 
 export const MainText = styled.p`
   font-size: 0.8rem;
+  line-height: 1.6;
   @media ${Theme.Breakpoints.smallDevices} {
     font-size: 0.9rem;
   }

@@ -13,40 +13,36 @@ import { DesktopTile, MobileTile } from "./OfferTile";
 import Container from "../../styledHelpers/Container";
 import { MobileTilesDiv } from "./OfferStyles";
 import { useMediaPredicate } from "react-media-hook";
+import styled from "styled-components";
 
 function Offer() {
   return (
-    <Section id="offer">
-      <Container>
-        <Heading name="OFERTA BADAŃ" title="Badania psychologiczne" />
-        <MediaOffer />
-      </Container>
-      <Overlay />
-    </Section>
-  );
-}
-
-const MediaOffer = () => {
-  return (
     <>
-      {useMediaPredicate(`${Theme.Breakpoints.maxTablet}`) && (
-        <MobileTilesDiv>
-          <MobileTile icon={faCar} text="Na nowe kategorie" />
-          <MobileTile
-            icon={faChalkboardTeacher}
-            text="Instruktorów i egzaminatorów"
-          />
-          <MobileTile
-            icon={faAmbulance}
-            text="Do kierowania poj.uprzywilejowanymi"
-          />
-          <MobileTile icon={faTimesCircle} text="Po odebraniu prawa jazdy" />
-          <MobileTile icon={faHardHat} text="W zakresie medycyny pracy" />
-        </MobileTilesDiv>
-      )}
-      {useMediaPredicate(`${Theme.Breakpoints.tablet}`) && (
-        <>
-          <div>
+      <Section id="offer">
+        {useMediaPredicate(`${Theme.Breakpoints.maxTablet}`) && (
+          <Container>
+            <Heading name="OFERTA BADAŃ" title="Badania psychologiczne" />
+            <MobileTilesDiv>
+              <MobileTile icon={faCar} text="Na nowe kategorie" />
+              <MobileTile
+                icon={faChalkboardTeacher}
+                text="Instruktorów i egzaminatorów"
+              />
+              <MobileTile
+                icon={faAmbulance}
+                text="Do kierowania poj.uprzywilejowanymi"
+              />
+              <MobileTile
+                icon={faTimesCircle}
+                text="Po odebraniu prawa jazdy"
+              />
+              <MobileTile icon={faHardHat} text="W zakresie medycyny pracy" />
+            </MobileTilesDiv>
+          </Container>
+        )}
+        {useMediaPredicate(`${Theme.Breakpoints.tablet}`) && (
+          <GridContainer>
+            <Heading name="OFERTA BADAŃ" title="Badania psychologiczne" />
             <DesktopTile icon={faCar} text="Na nowe kategorie" />
             <DesktopTile
               icon={faChalkboardTeacher}
@@ -58,11 +54,19 @@ const MediaOffer = () => {
             />
             <DesktopTile icon={faTimesCircle} text="Po odebraniu prawa jazdy" />
             <DesktopTile icon={faHardHat} text="W zakresie medycyny pracy" />
-          </div>
-        </>
-      )}
+          </GridContainer>
+        )}
+        <Overlay />
+      </Section>
     </>
   );
-};
+}
+
+const GridContainer = styled(Container)`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  align-items: end;
+`;
 
 export default Offer;

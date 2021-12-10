@@ -22,7 +22,7 @@ export const HomeOverlayDiv = styled.div`
   border-radius: 20px;
   padding: 20px 0;
   @media ${Theme.Breakpoints.tablet} {
-    max-width: 60%;
+    max-width: 65%;
     float: right;
     padding: 10px 20px;
   }
@@ -32,9 +32,6 @@ export const HomeOverlayDiv = styled.div`
 `;
 export const Article = styled.article`
   max-width: 500px;
-  @media ${Theme.Breakpoints.tablet} {
-    max-width: 350px;
-  }
 `;
 
 export const Button = styled.button`

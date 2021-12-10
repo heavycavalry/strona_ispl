@@ -1,25 +1,29 @@
 import styled from "styled-components";
+import Container from "../../styledHelpers/Container";
 import Theme from "../../styledHelpers/Theme";
 
-export const FlexContainer = styled.div`
+export const AboutTextContainer = styled.div`
+  @media ${Theme.Breakpoints.tablet} {
+    width: 50%;
+  }
+`;
+export const FlexContainer = styled(Container)`
   @media ${Theme.Breakpoints.tablet} {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    max-width: 100%;
+    align-items: center;
   }
+`;
+export const LabelsDivDesktop = styled.div`
+  margin-right: 50px;
 `;
 
 export const Image = styled.img`
-  display: none;
-  margin-right: 50px;
-  @media ${Theme.Breakpoints.tablet} {
-    display: unset;
-  }
+  max-width: 100%;
 `;
 
 export const LabelsDiv = styled.div`
-  margin: 50px 0;
   color: white;
   position: relative;
   display: flex;
@@ -43,15 +47,17 @@ export const Svg = styled.img`
 export const LabelDiv = styled.div`
   display: flex;
   align-items: center;
-  margin-left: 10px;
+  width: 100%;
 `;
 
 export const LabelsWrapper = styled.div`
   position: absolute;
-  padding: 0 20px;
+  margin-left: 40px;
   @media ${Theme.Breakpoints.tablet} {
+    margin: 0;
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
   }
 `;
 
