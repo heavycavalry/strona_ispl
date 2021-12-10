@@ -16,26 +16,31 @@ export const HomeSection = styled(Section)`
 `;
 
 export const HomeOverlayDiv = styled.div`
-  height: 60vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 50%);
   color: white;
   border-radius: 20px;
-  @media (min-width: 560px) {
-    position: relative;
+  padding: 20px 0;
+  @media ${Theme.Breakpoints.tablet} {
+    max-width: 60%;
+    float: right;
+    padding: 10px 20px;
+  }
+  @media ${Theme.Breakpoints.laptop} {
+    padding: 20px 0px 20px 40px;
   }
 `;
 export const Article = styled.article`
   max-width: 500px;
-  @media (min-width: 560px) {
+  @media ${Theme.Breakpoints.tablet} {
+    max-width: 350px;
   }
 `;
 
 export const Button = styled.button`
-  position: absolute;
   padding: 15px 20px;
   background: ${Theme.Colors.green};
-  border-radius: 10px;
+  border-radius: 20px;
   color: white;
   font-size: 20px;
 `;

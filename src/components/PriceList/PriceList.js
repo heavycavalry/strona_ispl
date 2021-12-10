@@ -1,10 +1,10 @@
 import Container from "../../styledHelpers/Container";
 import Section from "../../styledHelpers/Section";
 import WhiteRoundDiv from "../../styledHelpers/WhiteRoundDiv";
-import SectionHeading from "../common/SectionHeader";
 import styled from "styled-components";
 import Theme from "../../styledHelpers/Theme";
 import { MainText } from "../../styledHelpers/Headers";
+import SectionHeading from "../SectionHeader";
 const PriceList = () => {
   return (
     <Section id="price">

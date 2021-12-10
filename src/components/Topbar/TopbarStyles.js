@@ -18,15 +18,10 @@ export const TopbarContainer = styled.div`
 export const ContactLineDiv = styled.div`
   background: ${Theme.Colors.colorGradient};
   color: white;
-  font-size: 10px;
 `;
 
 export const ContactLineIcon = styled(FontAwesomeIcon)`
   margin-right: 10px;
-`;
-
-export const Nav = styled.nav`
-  background-color: white;
 `;
 
 //NAVIGATION
@@ -60,6 +55,24 @@ export const Logo = styled.h2`
   margin: 0;
   font-style: ${Theme.FontStyles.Jomhuria};
   line-height: 2.5;
+`;
+
+export const Nav = styled.nav`
+  display: none;
+  width: 50%;
+  align-self: center;
+
+  @media ${Theme.Breakpoints.laptop} {
+    display: block;
+    > ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+`;
+
+export const NavigationLineDiv = styled.div`
+  background: white;
 `;
 
 export const SidebarLink = styled(Link)``;

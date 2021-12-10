@@ -3,6 +3,7 @@ import Theme from "./Theme";
 
 export const H1Styled = styled.h1`
   font-size: 1.8rem;
+  margin: 0;
   @media ${Theme.Breakpoints.smallDevices} {
     font-size: 2rem;
   }

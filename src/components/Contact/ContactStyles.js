@@ -3,6 +3,14 @@ import Theme from "../../styledHelpers/Theme";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import WhiteRoundDiv from "../../styledHelpers/WhiteRoundDiv";
 
+export const GridWrapper = styled.div`
+  @media ${Theme.Breakpoints.tablet} {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+  }
+`;
+
 export const ContactAddress = styled.address`
   width: 85%;
   font-style: normal;

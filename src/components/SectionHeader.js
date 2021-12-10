@@ -1,4 +1,4 @@
-import { GreenHeading, H2Styled } from "../../styledHelpers/Headers";
+import { GreenHeading, H2Styled } from "../styledHelpers/Headers";
 import styled from "styled-components";
 function SectionHeading(props) {
   return (

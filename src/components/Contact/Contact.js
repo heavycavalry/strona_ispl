@@ -1,16 +1,16 @@
 import { faMapMarkerAlt, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import Section from "../../styledHelpers/Section";
 import Container from "../../styledHelpers/Container";
-import styled from "styled-components";
 import Map from "./Map";
 import {
   ContactIconDiv,
   ContactAddress,
   ContactDiv,
   ContactIcon,
+  GridWrapper,
 } from "./ContactStyles";
-import SectionHeading from "../common/SectionHeader";
-import Theme from "../../styledHelpers/Theme";
+import SectionHeading from "../SectionHeader";
+
 function Contact() {
   return (
     <Section id="contact">
@@ -47,13 +47,5 @@ function Contact() {
     </Section>
   );
 }
-
-const GridWrapper = styled.div`
-  @media ${Theme.Breakpoints.tablet} {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
-  }
-`;
 
 export default Contact;

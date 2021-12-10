@@ -59,7 +59,9 @@ export const MobileTileDiv = styled(WhiteRoundDiv)`
   }
 `;
 
-export const DesktopTileDiv = styled(WhiteRoundDiv)``;
+export const DesktopTileDiv = styled(WhiteRoundDiv)`
+  width: 200px;
+`;
 
 export const OverlayTextDiv = styled.div`
   color: white;

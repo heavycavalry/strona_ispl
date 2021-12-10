@@ -1,4 +1,4 @@
-import Heading from "../common/SectionHeader";
+import Heading from "../SectionHeader";
 import Section from "../../styledHelpers/Section";
 import Overlay from "./Overlay";
 import Theme from "../../styledHelpers/Theme";
