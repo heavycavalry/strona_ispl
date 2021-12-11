@@ -12,8 +12,10 @@ const NavigationLine = () => {
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
+
+  const handleScroll = () => {};
   return (
-    <NavigationLineDiv>
+    <NavigationLineDiv onScroll={handleScroll}>
       <Container>
         <Link to="/" onClick={toggleHome}>
           <Logo>Badania kierowców</Logo>

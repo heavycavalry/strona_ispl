@@ -14,6 +14,7 @@ export const GridWrapper = styled.div`
 export const ContactAddress = styled.address`
   width: 85%;
   font-style: normal;
+  max-height: 200px;
   font-size: 0.8rem;
   > a {
     text-decoration: underline;

@@ -1,5 +1,9 @@
-html {
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
+html,body {
   font-size: 16px;
+  height: 100%;
 }
 
 body {
@@ -38,3 +42,6 @@ button {
   border: none;
   outline: none;
 }
+`;
+
+export default GlobalStyle;

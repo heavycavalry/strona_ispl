@@ -6,13 +6,10 @@ export const HomeSection = styled(Section)`
   background: url(${`${process.env.PUBLIC_URL}/assets/images/home-img.jpg`})
     no-repeat center;
   background-size: cover;
-  max-width: 100vw;
-  padding-top: 50px;
-  height: calc(100vh - 80px);
   display: flex;
   align-items: center;
-  @media (min-width: 560px) {
-  }
+  justify-content: center;
+  padding: 0;
 `;
 
 export const HomeOverlayDiv = styled.div`
@@ -25,9 +22,7 @@ export const HomeOverlayDiv = styled.div`
     max-width: 65%;
     float: right;
     padding: 10px 20px;
-  }
-  @media ${Theme.Breakpoints.laptop} {
-    padding: 20px 0px 20px 40px;
+    margin-top: 80px;
   }
 `;
 export const Article = styled.article`

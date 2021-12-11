@@ -34,10 +34,11 @@ export const H2Styled = styled.h2`
     font-size: 2.2rem;
   }
   @media ${Theme.Breakpoints.laptop} {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
+    margin: 10px 0;
   }
   @media ${Theme.Breakpoints.desktop} {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 `;
 
@@ -47,10 +48,14 @@ export const H3Styled = styled.h3`
 `;
 
 export const GreenHeading = styled.p`
-  font-size: 16px;
+  font-size: 1rem;
   color: ${Theme.Colors.green};
   font-family: ${Theme.FontStyles.Heebo};
   font-weight: bold;
+  @media ${Theme.Breakpoints.laptop} {
+    margin: 0;
+    font-size: 1.2rem;
+  }
 `;
 
 export const MainText = styled.p`
@@ -63,7 +68,7 @@ export const MainText = styled.p`
     font-size: 1rem;
   }
   @media ${Theme.Breakpoints.desktop} {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 `;
 

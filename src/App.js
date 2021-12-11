@@ -4,12 +4,13 @@ import Offer from "./components/Offer/Offer";
 import Contact from "./components/Contact/Contact";
 import Topbar from "./components/Topbar/Topbar";
 import PriceList from "./components/PriceList/PriceList";
-
+import GlobalStyle from "./styledHelpers/GlobalStyle";
 function App() {
   return (
     <>
-      <Topbar />
+      <GlobalStyle />
       <Home />
+      <Topbar />
       <About />
       <Offer />
       <Contact />

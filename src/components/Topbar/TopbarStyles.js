@@ -5,6 +5,7 @@ import { Link } from "react-scroll";
 //HEADER
 export const TopbarContainer = styled.header`
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 9;
   & > div > div,
@@ -72,7 +73,7 @@ export const Nav = styled.nav`
 `;
 
 export const NavigationLineDiv = styled.div`
-  background: white;
+  background-color: white;
 `;
 
 export const SidebarLink = styled(Link)``;

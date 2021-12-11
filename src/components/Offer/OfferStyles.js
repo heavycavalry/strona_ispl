@@ -2,13 +2,14 @@ import styled from "styled-components";
 import Theme from "../../styledHelpers/Theme";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import WhiteRoundDiv from "../../styledHelpers/WhiteRoundDiv";
+import Container from "../../styledHelpers/Container";
 
-export const OverlayImageDiv = styled.div`
+export const ImageDiv = styled.div`
   background: url(${`${process.env.PUBLIC_URL}/assets/images/overlay-img-mobile.jpg`})
     no-repeat center center fixed;
   background-size: cover;
   max-width: 100vw;
-  height: 30vh;
+  height: 40vh;
   position: relative;
   left: 50%;
   right: 50%;
@@ -17,7 +18,7 @@ export const OverlayImageDiv = styled.div`
   display: flex;
   justify-content: center;
   text-align: center;
-  @media (${Theme.Breakpoints.laptop}) {
+  @media ${Theme.Breakpoints.laptop} {
     background: url(${`${process.env.PUBLIC_URL}/assets/images/overlay-img-desktop.jpg`})
       no-repeat center fixed;
     background-size: cover;
@@ -30,47 +31,48 @@ export const OverlayDiv = styled.div`
   opacity: 0.5;
 `;
 
+export const GridContainer = styled(Container)`
+  display: grid;
+  grid-template-columns: 1;
+  @media ${Theme.Breakpoints.laptop} {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+`;
+
 export const OfferIcon = styled(FontAwesomeIcon)`
   color: ${Theme.Colors.green};
-  font-size: 30px;
+  font-size: 35px;
+  @media ${Theme.Breakpoints.laptop} {
+    font-size: 60px;
+  }
 `;
 
-export const MobileTilesDiv = styled.div`
-  margin-bottom: 20px;
-`;
-
-export const MobileTileDiv = styled(WhiteRoundDiv)`
+export const TileDiv = styled(WhiteRoundDiv)`
+  display: flex;
   justify-content: flex-start;
-  font-size: 13px;
-  position: relative;
-  border-bottom: 3px solid ${Theme.Colors.green};
+  border-bottom: 5px solid ${Theme.Colors.green};
   transition: all 0.5s;
   &:hover {
     background-color: ${Theme.Colors.green};
     color: white;
-    > div > svg {
+    ${OfferIcon} {
       color: white;
     }
   }
-  > div {
-    width: 25%;
-    text-align: center;
+  @media ${Theme.Breakpoints.laptop} {
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media ${Theme.Breakpoints.desktop} {
+    height: 200px;
   }
 `;
 
-export const DesktopTileDiv = styled(WhiteRoundDiv)`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+export const IconWrapper = styled.div`
+  padding: 20px 0;
+  width: 25%;
   text-align: center;
-  width: 100%;
-  height: 150px;
-  border-bottom: 5px solid ${Theme.Colors.green};
-  @media (${Theme.Breakpoints.laptop}) {
-    height: 200px;
-  }
-  @media (${Theme.Breakpoints.desktop}) {
-    height: 250px;
   }
 `;
 
