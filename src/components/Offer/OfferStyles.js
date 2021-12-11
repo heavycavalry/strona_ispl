@@ -8,7 +8,7 @@ export const OverlayImageDiv = styled.div`
     no-repeat center center fixed;
   background-size: cover;
   max-width: 100vw;
-  height: 300px;
+  height: 30vh;
   position: relative;
   left: 50%;
   right: 50%;
@@ -63,9 +63,15 @@ export const DesktopTileDiv = styled(WhiteRoundDiv)`
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 350px;
-  height: 180px;
+  width: 100%;
+  height: 150px;
   border-bottom: 5px solid ${Theme.Colors.green};
+  @media (${Theme.Breakpoints.laptop}) {
+    height: 200px;
+  }
+  @media (${Theme.Breakpoints.desktop}) {
+    height: 250px;
+  }
 `;
 
 export const OverlayTextDiv = styled.div`

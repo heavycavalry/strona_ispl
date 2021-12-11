@@ -3,7 +3,7 @@ import Theme from "../../styledHelpers/Theme";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-scroll";
 //HEADER
-export const TopbarContainer = styled.div`
+export const TopbarContainer = styled.header`
   position: fixed;
   width: 100%;
   z-index: 9;
