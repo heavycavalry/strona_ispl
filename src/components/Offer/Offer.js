@@ -24,6 +24,7 @@ function Offer() {
         <Tile icon={faTimesCircle} text="Po odebraniu prawa jazdy" />
         <Tile icon={faHardHat} text="W zakresie medycyny pracy" />
       </GridContainer>
+
       <Overlay />
     </Section>
   );

@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import Container from "./Container";
 import Theme from "./Theme";
 
 export const Section = styled.section`
-  min-height: calc(100vh - 80px);
+  min-height: 100vh;
   padding: 20px 0;
-  /* border: 5px solid red; */
+  vertical-align: center;
   @media ${Theme.Breakpoints.laptop} {
     padding: 40px 0;
   }

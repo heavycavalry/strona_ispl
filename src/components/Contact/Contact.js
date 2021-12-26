@@ -42,8 +42,8 @@ function Contact() {
             </ContactAddress>
           </ContactDiv>
         </GridWrapper>
-        <Map />
       </Container>
+      <Map />
     </Section>
   );
 }
