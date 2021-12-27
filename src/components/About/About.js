@@ -15,7 +15,7 @@ import { MainText } from "../../styledHelpers/Headers";
 import { useMediaPredicate } from "react-media-hook";
 import Theme from "../../styledHelpers/Theme";
 import Section from "../../styledHelpers/Section";
-
+import styled from "styled-components";
 function AboutSection() {
   return (
     <Section id="about">
@@ -32,48 +32,46 @@ function AboutSection() {
             siedziba pracowni znajduję się w Krakowie przy ul. Niskiej 2.
           </MainText>
         </AboutTextContainer>
-        <div>
-          <LabelsDiv>
-            <Svg
-              src={`${process.env.PUBLIC_URL}/assets/images/green-shape.svg`}
-            />
-            {useMediaPredicate(`${Theme.Breakpoints.maxTablet}`) && (
+        <LabelsDiv>
+          <Svg
+            src={`${process.env.PUBLIC_URL}/assets/images/green-shape.svg`}
+          />
+          {useMediaPredicate(`${Theme.Breakpoints.maxTablet}`) && (
+            <LabelsWrapper>
+              <Label
+                image={`${process.env.PUBLIC_URL}/assets/images/winner-white.png`}
+                number="15"
+                text="lat doświadczenia"
+              />
+              <Label
+                image={`${process.env.PUBLIC_URL}/assets/images/people-white.png`}
+                number="100000+"
+                text="zadowolonych pacjentów"
+              />
+            </LabelsWrapper>
+          )}
+          {useMediaPredicate(`${Theme.Breakpoints.tablet}`) && (
+            <LabelsDivDesktop>
+              <Image
+                src={`${process.env.PUBLIC_URL}/assets/images/about-img.jpg`}
+                alt=""
+              />
+
               <LabelsWrapper>
                 <Label
-                  image={`${process.env.PUBLIC_URL}/assets/images/winner-white.png`}
+                  image={`${process.env.PUBLIC_URL}/assets/images/winner-green.png`}
                   number="15"
                   text="lat doświadczenia"
                 />
                 <Label
-                  image={`${process.env.PUBLIC_URL}/assets/images/people-white.png`}
+                  image={`${process.env.PUBLIC_URL}/assets/images/people-green.png`}
                   number="100000+"
                   text="zadowolonych pacjentów"
                 />
               </LabelsWrapper>
-            )}
-            {useMediaPredicate(`${Theme.Breakpoints.tablet}`) && (
-              <LabelsDivDesktop>
-                <Image
-                  src={`${process.env.PUBLIC_URL}/assets/images/about-img.jpg`}
-                  alt=""
-                />
-
-                <LabelsWrapper>
-                  <Label
-                    image={`${process.env.PUBLIC_URL}/assets/images/winner-green.png`}
-                    number="15"
-                    text="lat doświadczenia"
-                  />
-                  <Label
-                    image={`${process.env.PUBLIC_URL}/assets/images/people-green.png`}
-                    number="100000+"
-                    text="zadowolonych pacjentów"
-                  />
-                </LabelsWrapper>
-              </LabelsDivDesktop>
-            )}
-          </LabelsDiv>
-        </div>
+            </LabelsDivDesktop>
+          )}
+        </LabelsDiv>
       </FlexContainer>
     </Section>
   );

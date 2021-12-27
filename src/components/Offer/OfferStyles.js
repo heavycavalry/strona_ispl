@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Theme from "../../styledHelpers/Theme";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import WhiteRoundDiv from "../../styledHelpers/WhiteRoundDiv";
+import WhiteBoardDiv from "../../styledHelpers/WhiteBoardDiv";
 import Container from "../../styledHelpers/Container";
 
 export const ImageDiv = styled.div`
@@ -48,8 +48,8 @@ export const OfferIcon = styled(FontAwesomeIcon)`
   }
 `;
 
-export const TileDiv = styled(WhiteRoundDiv)`
-  display: flex;
+export const TileDiv = styled(WhiteBoardDiv)`
+  align-items: center;
   justify-content: flex-start;
   border-bottom: 5px solid ${Theme.Colors.green};
   transition: all 0.5s;

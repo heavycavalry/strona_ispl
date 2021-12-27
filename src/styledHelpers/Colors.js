@@ -1,5 +1,6 @@
 export const Colors = {
   green: "#15BC76",
+  greenOpacity: "rgba(21, 188, 118, 0.2)",
   blue: "#14C2A3",
   grayGradient:
     "linear-gradient(180deg, #F4F4F4 0%, rgba(255, 255, 255, 0) 100%)",

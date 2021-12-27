@@ -11,8 +11,6 @@ export const FlexContainer = styled(Container)`
   @media ${Theme.Breakpoints.tablet} {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
   }
 `;
 export const LabelsDivDesktop = styled.div`
@@ -21,6 +19,7 @@ export const LabelsDivDesktop = styled.div`
 
 export const Image = styled.img`
   max-width: 100%;
+  /* margin-top: 40px; */
 `;
 
 export const LabelsDiv = styled.div`
@@ -33,7 +32,7 @@ export const LabelsDiv = styled.div`
     justify-content: center;
   }
   @media ${Theme.Breakpoints.tablet} {
-    color: ${Theme.Colors.green};
+    color: ${Theme.Colors.darkGray};
   }
 `;
 
@@ -54,10 +53,9 @@ export const LabelsWrapper = styled.div`
   position: absolute;
   margin-left: 40px;
   @media ${Theme.Breakpoints.tablet} {
-    margin: 0;
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin: 20px 0;
   }
 `;
 

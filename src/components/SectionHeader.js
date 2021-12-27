@@ -10,7 +10,7 @@ function SectionHeading(props) {
 }
 
 const Header = styled.header`
-  padding: 10px 0;
+  padding-bottom: 1rem;
 `;
 
 export default SectionHeading;

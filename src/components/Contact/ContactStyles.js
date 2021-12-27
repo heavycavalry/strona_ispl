@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Theme from "../../styledHelpers/Theme";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import WhiteRoundDiv from "../../styledHelpers/WhiteRoundDiv";
+import WhiteBoardDiv from "../../styledHelpers/WhiteBoardDiv";
 
 export const GridWrapper = styled.div`
   @media ${Theme.Breakpoints.tablet} {
@@ -31,7 +31,7 @@ export const ContactAddress = styled.address`
   }
 `;
 
-export const ContactDiv = styled(WhiteRoundDiv)`
+export const ContactDiv = styled(WhiteBoardDiv)`
   align-items: flex-start;
   padding: 10px;
 `;

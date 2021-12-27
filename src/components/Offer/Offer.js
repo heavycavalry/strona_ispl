@@ -9,23 +9,28 @@ import {
   faTimesCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import { Tile } from "./Tile";
-import { GridContainer, TilesDiv } from "./OfferStyles";
+import { GridContainer } from "./OfferStyles";
 
 function Offer() {
   return (
     <Section id="offer">
-      <GridContainer>
-        <div>
-          <Heading name="OFERTA BADAŃ" title="Badania psychologiczne" />
-        </div>
-        <Tile icon={faCar} text="Na nowe kategorie" />
-        <Tile icon={faChalkboardTeacher} text="Instruktorów i egzaminatorów" />
-        <Tile icon={faAmbulance} text="Do kierowania poj.uprzywilejowanymi" />
-        <Tile icon={faTimesCircle} text="Po odebraniu prawa jazdy" />
-        <Tile icon={faHardHat} text="W zakresie medycyny pracy" />
-      </GridContainer>
+      <div>
+        <GridContainer>
+          <div>
+            <Heading name="OFERTA BADAŃ" title="Badania psychologiczne" />
+          </div>
+          <Tile icon={faCar} text="Na nowe kategorie" />
+          <Tile
+            icon={faChalkboardTeacher}
+            text="Instruktorów i egzaminatorów"
+          />
+          <Tile icon={faAmbulance} text="Do kierowania poj.uprzywilejowanymi" />
+          <Tile icon={faTimesCircle} text="Po odebraniu prawa jazdy" />
+          <Tile icon={faHardHat} text="W zakresie medycyny pracy" />
+        </GridContainer>
 
-      <Overlay />
+        <Overlay />
+      </div>
     </Section>
   );
 }
