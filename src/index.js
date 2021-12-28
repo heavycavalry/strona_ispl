@@ -2,8 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 ReactDOM.render(
-  <>
-    <App />
-  </>,
+  <Router basename="/strona_ispl">
+    <Switch>
+      <Route path="/" exact component={App} />
+    </Switch>
+  </Router>,
   document.getElementById("root")
 );
