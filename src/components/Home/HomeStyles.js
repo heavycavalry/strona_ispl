@@ -30,9 +30,14 @@ export const Article = styled.article`
 `;
 
 export const Button = styled.button`
+  cursor: pointer;
   padding: 15px 20px;
   background: ${Theme.Colors.green};
   border-radius: 20px;
   color: white;
   font-size: 20px;
+  &:hover {
+    background: ${Theme.Colors.greenDark};
+    box-shadow: ${Theme.Colors.shadow};
+  }
 `;

@@ -68,8 +68,25 @@ export const Nav = styled.nav`
     > ul {
       display: flex;
       justify-content: space-between;
-      > li {
-        color: ${Theme.Colors.green};
+      a {
+        position: relative;
+        color: ${Theme.Colors.darkGray};
+        &:hover {
+          color: unset;
+        }
+      }
+      a:after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        background: ${Theme.Colors.green};
+        bottom: -0.5rem;
+        height: 0.1rem;
+        left: 0;
+      }
+      a:hover:after {
+        width: 100%;
+        transition: width 0.6s;
       }
     }
   }
