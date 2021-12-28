@@ -2,23 +2,22 @@ import Heading from "../SectionHeader";
 import {
   LabelDiv,
   LabelNumber,
-  LabelsWrapper,
+  LabelsMobileContainer,
   LabelIcon,
   Svg,
-  LabelsDiv,
   FlexContainer,
-  Image,
-  LabelsDivDesktop,
+  SvgContainer,
+  DesktopImageSection,
   AboutTextContainer,
 } from "./AboutStyles";
 import { MainText } from "../../styledHelpers/Headers";
 import { useMediaPredicate } from "react-media-hook";
 import Theme from "../../styledHelpers/Theme";
-import Section from "../../styledHelpers/Section";
-import styled from "styled-components";
+import { CenteredSection } from "../../styledHelpers/Section";
+
 function AboutSection() {
   return (
-    <Section id="about">
+    <CenteredSection id="about">
       <FlexContainer>
         <AboutTextContainer>
           <Heading
@@ -32,12 +31,13 @@ function AboutSection() {
             siedziba pracowni znajduję się w Krakowie przy ul. Niskiej 2.
           </MainText>
         </AboutTextContainer>
-        <LabelsDiv>
-          <Svg
-            src={`${process.env.PUBLIC_URL}/assets/images/green-shape.svg`}
-          />
-          {useMediaPredicate(`${Theme.Breakpoints.maxTablet}`) && (
-            <LabelsWrapper>
+
+        {useMediaPredicate(`${Theme.Breakpoints.maxTablet}`) && (
+          <SvgContainer>
+            <Svg
+              src={`${process.env.PUBLIC_URL}/assets/images/green-shape.svg`}
+            />
+            <LabelsMobileContainer>
               <Label
                 image={`${process.env.PUBLIC_URL}/assets/images/winner-white.png`}
                 number="15"
@@ -48,32 +48,31 @@ function AboutSection() {
                 number="100000+"
                 text="zadowolonych pacjentów"
               />
-            </LabelsWrapper>
-          )}
-          {useMediaPredicate(`${Theme.Breakpoints.tablet}`) && (
-            <LabelsDivDesktop>
-              <Image
-                src={`${process.env.PUBLIC_URL}/assets/images/about-img.jpg`}
-                alt=""
+            </LabelsMobileContainer>
+          </SvgContainer>
+        )}
+        {useMediaPredicate(`${Theme.Breakpoints.tablet}`) && (
+          <DesktopImageSection>
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/images/about-img.jpg`}
+              alt=""
+            />
+            <div>
+              <Label
+                image={`${process.env.PUBLIC_URL}/assets/images/winner-green.png`}
+                number="15"
+                text="lat doświadczenia"
               />
-
-              <LabelsWrapper>
-                <Label
-                  image={`${process.env.PUBLIC_URL}/assets/images/winner-green.png`}
-                  number="15"
-                  text="lat doświadczenia"
-                />
-                <Label
-                  image={`${process.env.PUBLIC_URL}/assets/images/people-green.png`}
-                  number="100000+"
-                  text="zadowolonych pacjentów"
-                />
-              </LabelsWrapper>
-            </LabelsDivDesktop>
-          )}
-        </LabelsDiv>
+              <Label
+                image={`${process.env.PUBLIC_URL}/assets/images/people-green.png`}
+                number="100000+"
+                text="zadowolonych pacjentów"
+              />
+            </div>
+          </DesktopImageSection>
+        )}
       </FlexContainer>
-    </Section>
+    </CenteredSection>
   );
 }
 

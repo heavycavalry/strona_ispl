@@ -45,6 +45,9 @@ export const H2Styled = styled.h2`
 export const H3Styled = styled.h3`
   font-size: 1rem;
   font-weight: normal;
+  @media ${Theme.Breakpoints.laptop} {
+    font-size: 1.1rem;
+  }
 `;
 
 export const GreenHeading = styled.p`

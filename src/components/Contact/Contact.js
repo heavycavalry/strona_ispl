@@ -1,5 +1,5 @@
 import { faMapMarkerAlt, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
-import Section from "../../styledHelpers/Section";
+import { Section } from "../../styledHelpers/Section";
 import Container from "../../styledHelpers/Container";
 import Map from "./Map";
 import {

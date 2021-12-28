@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Section from "../../styledHelpers/Section";
+import { Section } from "../../styledHelpers/Section";
 import Theme from "../../styledHelpers/Theme";
 
 export const HomeSection = styled(Section)`

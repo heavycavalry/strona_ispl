@@ -5,7 +5,7 @@ export const Breakpoints = {
   laptop: "screen and (min-width: 992px)",
   desktop: "screen and (min-width: 1200px)",
   bigScreen: "screen and (min-width: 1400px)",
-  maxTablet: "screen and (max-width: 760px)",
+  maxTablet: "screen and (max-width: 759px)",
 };
 
 export default Breakpoints;

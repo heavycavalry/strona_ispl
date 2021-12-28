@@ -1,5 +1,5 @@
 import Container from "../../styledHelpers/Container";
-import Section from "../../styledHelpers/Section";
+import { CenteredSection } from "../../styledHelpers/Section";
 import { WhiteBoardDiv } from "../../styledHelpers/WhiteBoardDiv";
 import styled from "styled-components";
 import Theme from "../../styledHelpers/Theme";
@@ -8,7 +8,7 @@ import SectionHeading from "../SectionHeader";
 import { useMediaPredicate } from "react-media-hook";
 const PriceList = () => {
   return (
-    <Section id="price">
+    <CenteredSection id="price">
       <Container>
         <SectionHeading
           name="CENNIK USŁUG"
@@ -89,7 +89,7 @@ i okulistą"
           </Grid>
         )}
       </Container>
-    </Section>
+    </CenteredSection>
   );
 };
 

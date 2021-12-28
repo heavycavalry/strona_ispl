@@ -17,6 +17,7 @@ export const ImageDiv = styled.div`
   margin-right: -50vw;
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
   @media ${Theme.Breakpoints.laptop} {
     background: url(${`${process.env.PUBLIC_URL}/assets/images/overlay-img-desktop.jpg`})
@@ -27,6 +28,7 @@ export const ImageDiv = styled.div`
 
 export const OverlayDiv = styled.div`
   width: 100%;
+  height: 100%;
   background-color: black;
   opacity: 0.5;
 `;
@@ -36,7 +38,8 @@ export const GridContainer = styled(Container)`
   grid-template-columns: 1;
   @media ${Theme.Breakpoints.laptop} {
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 1rem;
+    padding: 2rem 0;
   }
 `;
 

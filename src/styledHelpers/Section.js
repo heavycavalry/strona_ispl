@@ -1,9 +1,13 @@
 import styled from "styled-components";
-import Theme from "./Theme";
-
-export const Section = styled.section`
+const Section = styled.section`
   min-height: 100vh;
-  padding: 3rem 0;
+  padding: 2rem 0;
 `;
 
-export default Section;
+const CenteredSection = styled(Section)`
+  display: flex;
+  align-items: center;
+  padding: 0;
+`;
+
+export { Section, CenteredSection };

@@ -13,7 +13,7 @@ const Map = () => {
 
 const MapFrame = styled.iframe`
   margin: 2rem 0;
-  height: 25em;
+  height: 50vh;
 `;
 
 export default Map;

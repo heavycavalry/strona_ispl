@@ -1,5 +1,5 @@
 import Heading from "../SectionHeader";
-import Section from "../../styledHelpers/Section";
+import { Section } from "../../styledHelpers/Section";
 import Overlay from "./Overlay";
 import {
   faAmbulance,
@@ -14,23 +14,18 @@ import { GridContainer } from "./OfferStyles";
 function Offer() {
   return (
     <Section id="offer">
-      <div>
-        <GridContainer>
-          <div>
-            <Heading name="OFERTA BADAŃ" title="Badania psychologiczne" />
-          </div>
-          <Tile icon={faCar} text="Na nowe kategorie" />
-          <Tile
-            icon={faChalkboardTeacher}
-            text="Instruktorów i egzaminatorów"
-          />
-          <Tile icon={faAmbulance} text="Do kierowania poj.uprzywilejowanymi" />
-          <Tile icon={faTimesCircle} text="Po odebraniu prawa jazdy" />
-          <Tile icon={faHardHat} text="W zakresie medycyny pracy" />
-        </GridContainer>
+      <GridContainer>
+        <div>
+          <Heading name="OFERTA BADAŃ" title="Badania psychologiczne" />
+        </div>
+        <Tile icon={faCar} text="Na nowe kategorie" />
+        <Tile icon={faChalkboardTeacher} text="Instruktorów i egzaminatorów" />
+        <Tile icon={faAmbulance} text="Do kierowania poj.uprzywilejowanymi" />
+        <Tile icon={faTimesCircle} text="Po odebraniu prawa jazdy" />
+        <Tile icon={faHardHat} text="W zakresie medycyny pracy" />
+      </GridContainer>
 
-        <Overlay />
-      </div>
+      <Overlay />
     </Section>
   );
 }

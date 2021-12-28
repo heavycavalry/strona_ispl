@@ -7,32 +7,13 @@ export const AboutTextContainer = styled.div`
     width: 50%;
   }
 `;
+
 export const FlexContainer = styled(Container)`
   @media ${Theme.Breakpoints.tablet} {
     display: flex;
     flex-direction: row-reverse;
-  }
-`;
-export const LabelsDivDesktop = styled.div`
-  margin-right: 50px;
-`;
-
-export const Image = styled.img`
-  max-width: 100%;
-  /* margin-top: 40px; */
-`;
-
-export const LabelsDiv = styled.div`
-  color: white;
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  @media ${Theme.Breakpoints.mobile} {
-    justify-content: center;
-  }
-  @media ${Theme.Breakpoints.tablet} {
-    color: ${Theme.Colors.darkGray};
+    align-items: center;
+    justify-content: space-between;
   }
 `;
 
@@ -43,13 +24,17 @@ export const Svg = styled.img`
   }
 `;
 
-export const LabelDiv = styled.div`
-  display: flex;
-  align-items: center;
-  width: 100%;
+export const DesktopImageSection = styled.div`
+  margin-right: 1rem;
+  > img {
+    width: 100%;
+  }
+  > div {
+    display: flex;
+  }
 `;
 
-export const LabelsWrapper = styled.div`
+export const LabelsMobileContainer = styled.div`
   position: absolute;
   margin-left: 40px;
   @media ${Theme.Breakpoints.tablet} {
@@ -57,6 +42,22 @@ export const LabelsWrapper = styled.div`
     justify-content: space-between;
     margin: 20px 0;
   }
+`;
+
+export const SvgContainer = styled.div`
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  @media ${Theme.Breakpoints.mobile} {
+    justify-content: center;
+  }
+`;
+
+export const LabelDiv = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
 `;
 
 export const LabelIcon = styled.img`
