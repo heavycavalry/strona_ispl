@@ -21,8 +21,8 @@ export const HomeOverlayDiv = styled.div`
   @media ${Theme.Breakpoints.tablet} {
     max-width: 65%;
     float: right;
-    padding: 10px 20px;
-    margin-top: 80px;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
   }
 `;
 export const Article = styled.article`

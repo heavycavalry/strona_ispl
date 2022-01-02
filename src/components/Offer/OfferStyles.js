@@ -9,28 +9,17 @@ export const ImageDiv = styled.div`
     no-repeat center center fixed;
   background-size: cover;
   max-width: 100vw;
-  height: 40vh;
+  margin-top: 1rem;
   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   @media ${Theme.Breakpoints.laptop} {
     background: url(${`${process.env.PUBLIC_URL}/assets/images/overlay-img-desktop.jpg`})
-      no-repeat center fixed;
+      no-repeat center center fixed;
     background-size: cover;
   }
-`;
-
-export const OverlayDiv = styled.div`
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 0.5;
 `;
 
 export const GridContainer = styled(Container)`
@@ -81,6 +70,7 @@ export const IconWrapper = styled.div`
 
 export const OverlayTextDiv = styled.div`
   color: white;
-  z-index: 2;
-  position: absolute;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 1rem;
 `;

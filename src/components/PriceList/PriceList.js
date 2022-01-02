@@ -96,10 +96,10 @@ i okulistą"
 const PriceTileDesktop = styled(WhiteBoardDiv)`
   flex-direction: column;
   padding: 1rem 2rem;
-  justify-content: flex-start;
-  align-items: center;
+  text-align: center;
   > :first-child {
     border-bottom: 2px solid ${Theme.Colors.greenOpacity};
+    height: 200px;
   }
 `;
 const Grid = styled.div`
@@ -123,11 +123,10 @@ const PriceTileMobile = (props) => {
 };
 
 const PriceTileDiv = styled(WhiteBoardDiv)`
-  height: 110px;
   padding: 5px 10px;
-  z-index: 2;
   border-left: 5px solid ${Theme.Colors.green};
-  position: relative;
+  display: flex;
+  align-items: center;
   > :first-child {
     width: 30%;
   }

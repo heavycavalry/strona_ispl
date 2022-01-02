@@ -12,7 +12,6 @@ function Overlay() {
         <H3Styled>badania kontrolne</H3Styled>
         <H3Styled>badania sanitarno-epidemiologiczne</H3Styled>
       </OverlayTextDiv>
-      <OverlayDiv> </OverlayDiv>
     </ImageDiv>
   );
 }

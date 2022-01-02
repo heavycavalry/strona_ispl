@@ -12,6 +12,18 @@ const Navbar = () => {
             duration={500}
             exact="true"
             offset={-80}
+            to="home"
+          >
+            STRONA GŁÓWNA
+          </Link>
+        </li>
+        <li>
+          <Link
+            spy={true}
+            smooth="true"
+            duration={500}
+            exact="true"
+            offset={-80}
             to="about"
           >
             O NAS

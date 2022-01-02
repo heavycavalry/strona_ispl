@@ -60,7 +60,7 @@ export const Logo = styled.h2`
 
 export const Nav = styled.nav`
   display: none;
-  width: 50%;
+  width: 60%;
   align-self: center;
 
   @media ${Theme.Breakpoints.laptop} {
