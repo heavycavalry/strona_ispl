@@ -3,7 +3,7 @@ import { ImageDiv, OverlayDiv, OverlayTextDiv } from "./OfferStyles";
 
 function Overlay() {
   return (
-    <ImageDiv>
+    <ImageDiv title="Mężczyzna za kierownicą">
       <OverlayTextDiv>
         <p>Wykonujemy również:</p>
         <H3Styled>badania psychotechniczne</H3Styled>

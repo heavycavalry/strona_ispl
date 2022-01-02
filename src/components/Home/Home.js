@@ -6,7 +6,7 @@ import { useMediaPredicate } from "react-media-hook";
 import Theme from "../../styledHelpers/Theme";
 function Home() {
   return (
-    <HomeSection id="home">
+    <HomeSection id="home" title="Mężczyzna za kierownicą">
       {useMediaPredicate(`${Theme.Breakpoints.maxTablet}`) && (
         <HomeOverlayDiv>
           <Container>
