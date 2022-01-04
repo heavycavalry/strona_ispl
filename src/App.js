@@ -5,7 +5,8 @@ import Contact from "./components/Contact/Contact";
 import Topbar from "./components/Topbar/Topbar";
 import PriceList from "./components/PriceList/PriceList";
 import GlobalStyle from "./styledHelpers/GlobalStyle";
-import Router from "react-router-dom";
+import Footer from "./components/Footer/Footer";
+
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
       <Offer />
       <Contact />
       <PriceList />
+      <Footer />
     </>
   );
 }

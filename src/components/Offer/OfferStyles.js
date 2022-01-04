@@ -44,17 +44,19 @@ export const TileDiv = styled(WhiteBoardDiv)`
   align-items: center;
   justify-content: flex-start;
   border-bottom: 5px solid ${Theme.Colors.green};
-  transition: all 0.5s;
-  &:hover {
-    background-color: ${Theme.Colors.green};
-    color: white;
-    ${OfferIcon} {
-      color: white;
-    }
-  }
+  transition: 0.5s;
   @media ${Theme.Breakpoints.laptop} {
     flex-direction: column;
     justify-content: center;
+    &:hover {
+      background-color: ${Theme.Colors.green};
+      p {
+        color: white;
+      }
+      ${OfferIcon} {
+        color: white;
+      }
+    }
   }
   @media ${Theme.Breakpoints.desktop} {
     height: 200px;

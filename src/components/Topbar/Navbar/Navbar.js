@@ -48,9 +48,9 @@ const Navbar = () => {
             duration={500}
             exact="true"
             offset={-80}
-            to="price"
+            to="contact"
           >
-            CENNIK
+            KONTAKT
           </Link>
         </li>
         <li>
@@ -60,9 +60,9 @@ const Navbar = () => {
             duration={500}
             exact="true"
             offset={-80}
-            to="contact"
+            to="price"
           >
-            KONTAKT
+            CENNIK
           </Link>
         </li>
       </ul>
