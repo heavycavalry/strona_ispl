@@ -50,6 +50,27 @@ export const SidebarMenu = styled.aside`
   opacity: 0.9;
   background-color: black;
   color: white;
+  a {
+        position: relative;
+        color: ${Theme.Colors.lightGray};
+        &:hover {
+          color: unset;
+        }
+      }
+      a:after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        background: ${Theme.Colors.green};
+        bottom: 0rem;
+        height: 0.1rem;
+        left: 0;
+      }
+      a:hover:after {
+        width: 100%;
+        transition: width 0.6s;
+      }
+    }
 `;
 
 export const Logo = styled.h2`

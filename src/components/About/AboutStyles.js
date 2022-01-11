@@ -31,16 +31,7 @@ export const DesktopImageSection = styled.div`
   }
   > div {
     display: flex;
-  }
-`;
-
-export const LabelsMobileContainer = styled.div`
-  position: absolute;
-  margin-left: 40px;
-  @media ${Theme.Breakpoints.tablet} {
-    display: flex;
     justify-content: space-between;
-    margin: 20px 0;
   }
 `;
 
@@ -49,30 +40,29 @@ export const SvgContainer = styled.div`
   position: relative;
   display: flex;
   align-items: center;
-  @media ${Theme.Breakpoints.mobile} {
-    justify-content: center;
-  }
+  justify-content: center;
+`;
+
+export const LabelsMobileContainer = styled.div`
+  position: absolute;
 `;
 
 export const LabelDiv = styled.div`
   display: flex;
   align-items: center;
-  width: 100%;
 `;
 
 export const LabelIcon = styled.img`
-  width: 40px;
-  margin-right: 10px;
-  @media ${Theme.Breakpoints.mobile} {
-    width: 70px;
-  }
+  width: 3rem;
+  margin-right: 1rem;
   @media ${Theme.Breakpoints.tablet} {
     fill: green;
   }
 `;
 
 export const LabelNumber = styled.p`
-  font-size: 20px;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
   font-weight: bold;
-  line-height: 0px;
+  line-height: 0;
 `;
